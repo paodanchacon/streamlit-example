@@ -5,15 +5,22 @@ import pandas as pd
 import streamlit as st
 
 """
-10 Cool Beginner Python Tricks That Will Make Your Life Easier
-Simple but effective tips for every python lovers
-The compactness of Python can make a developer’s life a lot easier when writing lines and lines of code. But there are some lesser-known Python tricks that can surprise you with their amazing capabilities.
+# 10 Cool Beginner Python Tricks That Will Make Your Life Easier
 
-In today’s article, I will discuss 10 Python tips and tricks that will be really helpful for beginners to write more compact code. Knowing these tips and tricks will definitely save you some valuable time.
+Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
 
-1. Walrus operator
-The Walrus or := operator is one of the latest additions to python 3.8. It is an assignment operator that lets you assign value to a variable within an expression like conditional statements, loops, etc.
+If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
+forums](https://discuss.streamlit.io).
+
+In the meantime, below is an example of what you can do with just a few lines of code:
 """
+st.title('10 Cool Beginner Python Tricks That Will Make Your Life Easier')
+st.header('Simple but effective tips for every python lovers')
+
+from PIL import Image
+image = Image.open('img/image1.jpg')
+st.image(image, caption='Mr. Pineapple')
+
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)

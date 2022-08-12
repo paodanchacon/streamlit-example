@@ -13,17 +13,7 @@ In today’s article, I will discuss 10 Python tips and tricks that will be real
 
 1. Walrus operator
 The Walrus or := operator is one of the latest additions to python 3.8. It is an assignment operator that lets you assign value to a variable within an expression like conditional statements, loops, etc.
-Example
-
-If we want to check and print the length of a list:
 """
-Mylist = [1,2,3]
-if(l := len(Mylist) > 2):
-    st.slider(l)
-
-"""Output"""
-3
-
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
